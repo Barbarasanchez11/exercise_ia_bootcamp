@@ -1,7 +1,7 @@
 import pandas as pd
 
 def get_shape_as_matrix(df):
-    filas, columnas = df.shape
+    filas, columnas = df.shape #devuelve el tamaño del DataFrame como una tupla: el número de filas y el número de columnas
     return [[filas, columnas]]
 
 data = [
@@ -17,6 +17,7 @@ data = [
     [642, "Charlie", 36, "Center-back", "Arsenal"]
 ]
 
+#se cre un DF a partir de data.Tendrá 5 columnas
 players = pd.DataFrame(data, columns=["player_id", "name", "age", "position", "team"])
 
 # Llamar a la función
