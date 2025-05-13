@@ -13,6 +13,9 @@ df2 = pd.DataFrame({
     'age': [22, 23]
 })
 
-# Llamar a la función de concatenación
+def concatenarTablas(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
+    return pd.concat([df1, df2], ignore_index=True)
+
+
 resultado = concatenarTablas(df1, df2)
 print(resultado)
