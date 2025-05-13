@@ -11,6 +11,6 @@ weather = pd.DataFrame({
 def pivotTable(weather: pd.DataFrame) -> pd.DataFrame:
     return weather.pivot_table(index='month', columns='city', values='temperature', aggfunc='mean')
 
-
+#llamar pivotTable 
 resultado = pivotTable(weather)
 print(resultado)
